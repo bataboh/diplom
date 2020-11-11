@@ -264,16 +264,8 @@
 		margin-right: 0;
 	}
 
-	.me__svg-1024 {
-		display: block;
-		position: absolute;
-		right: -9px;
-   	top: 128px;
-   	z-index: 0;
-	}
-
 	.me__svg {
-		display: none;
+		max-width: 500px;
 	}
 
 	/* ЦЕНТРАЛЬНЫЙ БЛОК */
@@ -465,7 +457,7 @@
 		font-size: 16px;
 	}
 
-	.me__svg-1024 {
+	.me__svg {
 		bottom: auto;
 		top: 0;
 		right: 0;
@@ -609,20 +601,12 @@
 		margin-top: 28px;
 	}
 
-	.me__svg-1024 {
-		display: none;
-	}
-
-	.me__svg-mobile {
-		display: block;
-		position: absolute;
-		bottom: auto;
+	.me__svg {
 		right: 0;
 		max-width: none;
 		height: 296px;
 		width: 100%;
    	top: 100px;
-   	z-index: 0;
 	}
 
 	/* ЦЕНТРАЛЬНЫЙ БЛОК */

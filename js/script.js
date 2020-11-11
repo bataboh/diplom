@@ -28,14 +28,19 @@ var mySwiper = new Swiper('.swiper-container', {
 $(document).ready(function(){
 
 	function showpopup(){
-		$('.popup-container').toggleClass('active')
+		$('.popup-container').addClass('active')
+		setTimeout(function() {
+			$('.popup, .popup__succes').css({transform: "rotateX(1deg)"})
+		}, 400)
 		$('html').addClass('scroll')
 	}
 
 	function hidepopup(){
-		$('.popup-container').toggleClass('active')
-		$('html').removeClass('scroll')
-		$('.popup').fadeIn(500)
+		$('.popup').css({transform: "rotateX(90deg)"})
+		setTimeout(function() {
+			$('.popup-container').removeClass('active')
+			$('html').removeClass('scroll')
+		}, 400)
 	}
 
 	function scrollMenu(event){
@@ -81,15 +86,23 @@ $(document).ready(function(){
 					data: th.serialize(),
 				}).done(()=>{
 
-					console.log('Отправлено')
-
 					th.trigger('reset');
 				});
+
+				$('.popup').addClass('popup__off')
+					$('.popup__succes').addClass('active__succes')
+					setTimeout(function() {
+						$('.popup-container').removeClass('active')
+						$('.popup__succes').removeClass('active__succes')
+						$('.popup').removeClass('popup__off')
+						$('html').removeClass('scroll')
+					}, 2000);
 
 				return false;
 			}
 		});
 	});
+
 	$('.popup-container').on('click', function(e){
 		// console.log($(this))
 		if (e.target == $('.popup-container')[0]) {

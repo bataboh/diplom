@@ -60,9 +60,14 @@
 					<button class="popup__form_button">Отправить</button> <!-- class=popup-send -->
 				</div>
 			</div>
+			<div class="popup__succes">
+				<span>Ваша заявка успешно отправлена! <br><br>
+				В ближайшее время я с Вами свяжусь.
+				</span>
+			</div>
 		</div>
 	</form>
-	<section class="about">
+	<div class="about">
 		<div class="fixed-container me__container">
 			<span class="about-me__attribut about-me__attribut1 about-me__anim">{ }</span>
 			<span class="about-me__attribut about-me__attribut2 about-me__anim">&lt;div&gt;</span>
@@ -70,20 +75,20 @@
 			<span class="about-me__attribut about-me__attribut4 about-me__anim">&lt;div&gt;</span>
 			<span class="about-me__attribut about-me__attribut5 about-me__anim">&lt;/&gt;</span>
 			<div class="me__title">
-				<h1 class="fio">
+				<div class="fio">
 					Новиков Владислав
 					<span class="profession">Веб-разработчик</span>
-				</h1>
+				</div>
 				<button class="form__button">Узнать больше</button>
 			</div>
 			<img src="img/men.png" alt="Новиков Владислав, Веб-разработчик" class="about__image">
 	  </div>
 		<picture>
-			<img class="me__svg-mobile" src="img/ellipse-mob.png" alt="градиент">
-			<img class="me__svg-1024" src="img/ellipse-tablet.png" alt="градиент">
+			<source media="(max-width:425px)" srcset="img/ellipse-mob.png">
+				<source media="(max-width:1024px)" srcset="img/ellipse-tablet.png">
 			<img class="me__svg" src="img/gradient.svg" alt="градиент">
 		</picture>
-	</section>
+	</div>
 	<div class="central-bloc" id="central-bloc_nav">
 		<div class="fixed-container">
 			<span>Что я делаю</span>
