@@ -21,7 +21,7 @@
 		        transform: rotate(-21deg) translateX(149px) translateY(178px);
 	}
 	.about-me__attribut5 {
-		font-size: 46.38px;
+		font-size: 46px;
 		-webkit-transform: rotate(13deg) translateX(219px) translateY(-298px);
 		    -ms-transform: rotate(13deg) translateX(219px) translateY(-298px);
 		        transform: rotate(13deg) translateX(219px) translateY(-298px);
@@ -33,7 +33,7 @@
 		-webkit-transform: rotate(26deg);
 		    -ms-transform: rotate(26deg);
 		        transform: rotate(26deg);
-		font-size: 32.35px;
+		font-size: 32px;
 	}
 	.info-costs-me__attribut2 {
 		top: 233px;
@@ -41,7 +41,7 @@
 		-webkit-transform: rotate(-24deg);
 		    -ms-transform: rotate(-24deg);
 		        transform: rotate(-24deg);
-		font-size: 40.77px;
+		font-size: 41px;
 		word-spacing: -11px;
 	}
 	.info-costs-me__attribut3 {
@@ -50,7 +50,7 @@
 		-webkit-transform: rotate(16deg);
 		    -ms-transform: rotate(16deg);
 		        transform: rotate(16deg);
-		font-size: 57.11px;
+		font-size: 57px;
 	}
 	.info-costs-me__attribut4 {
 		top: 100px;
@@ -58,7 +58,7 @@
 		-webkit-transform: rotate(-16deg);
 		    -ms-transform: rotate(-16deg);
 		        transform: rotate(-16deg);
-		font-size: 49.96px;
+		font-size: 50px;
 	}
 	.info-costs-me__attribut5 {
 		top: 267px;
@@ -66,7 +66,7 @@
 		-webkit-transform: rotate(20deg);
 		    -ms-transform: rotate(20deg);
 		        transform: rotate(20deg);
-		font-size: 24.91px;
+		font-size: 25px;
 		word-spacing: -5px;
 	}
 
@@ -526,20 +526,20 @@
 @media (max-width: 425px) {
 	
 	.about-me__attribut1 {
-		font-size: 24.83px;
+		font-size: 25px;
 		-webkit-transform: rotate(30deg) translateX(-230px) translateY(-290px);
 		    -ms-transform: rotate(30deg) translateX(-230px) translateY(-290px);
 		        transform: rotate(30deg) translateX(-230px) translateY(-290px);
 	}
 	.about-me__attribut2 {
-		font-size: 15.18px;
+		font-size: 15px;
 		word-spacing: -3px;
 		-webkit-transform: rotate(20deg) translateX(65px) translateY(-340px);
 		    -ms-transform: rotate(20deg) translateX(65px) translateY(-340px);
 		        transform: rotate(20deg) translateX(65px) translateY(-340px);
 	}
 	.about-me__attribut3 {
-		font-size: 25.85px;
+		font-size: 26px;
 		-webkit-transform: rotate(18deg) translateX(-140px) translateY(-220px);
 		    -ms-transform: rotate(18deg) translateX(-140px) translateY(-220px);
 		        transform: rotate(18deg) translateX(-140px) translateY(-220px);
@@ -548,7 +548,7 @@
 		display: none;
 	}
 	.about-me__attribut5 {
-		font-size: 18.74px;
+		font-size: 19px;
 		word-spacing: -4px;
 		-webkit-transform: rotate(-35deg) translateX(270px) translateY(-260px);
 		    -ms-transform: rotate(-35deg) translateX(270px) translateY(-260px);

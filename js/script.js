@@ -37,6 +37,9 @@ $(document).ready(function(){
 
 	function hidepopup(){
 		$('.popup').css({transform: "rotateX(90deg)"})
+		$('#name, #email, #tel').removeClass('error')
+		$('#name, #email, #tel').val("")
+		console.log ($('#name'))
 		setTimeout(function() {
 			$('.popup-container').removeClass('active')
 			$('html').removeClass('scroll')
@@ -110,7 +113,7 @@ $(document).ready(function(){
 		}
 
 	});
-		$('.popup-cross').on('click', hidepopup);
+	$('.popup-cross').on('click', hidepopup);
 
 	$('.menu-item').on('click', scrollMenu);
 	

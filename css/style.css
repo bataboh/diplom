@@ -101,7 +101,13 @@ a {
 	font-size: 16px;
 	outline: none;
 	cursor: pointer;
+	transition-duration: .4s;
 }
+
+	.call__button:hover {
+		color: #fff;
+		background-color: #f82370;
+	}
  
 .call__button_mobile {
 	display: none;
@@ -117,7 +123,12 @@ a {
 	font-family: Roboto, sans-serif;
 	outline: none;
 	cursor: pointer;
+	transition-duration: .4s;
 }
+
+	.form__button:hover {
+		box-shadow: 0 0 10px #000;
+	}
 
 .scroll {
 	overflow: hidden;
@@ -150,10 +161,12 @@ a {
 	        justify-content: center;
 	overflow: hidden;
 	background-color: rgba(128,128,128,0.5);
+	overflow: auto;
 }
 
 	.popup {
-		border: 1px solid #000;
+		/* border: 1px solid #000; */
+		box-shadow: 0 0 10px #000;
 		min-width: 320px;
 		border-radius: 20px;
 		background: -o-linear-gradient(55deg, #ff8f5a 30%, #ff2f96 70%);
@@ -209,6 +222,7 @@ a {
 			position: absolute;
 			height: 31px;
 			width: 10px;
+			border-radius: 5px;
 			background-color: #fff;
 			left: 10px;
 		}
@@ -330,10 +344,16 @@ a {
 				border-radius: 30px;
 				outline: none;
 				cursor: pointer;
+				transition: .4s;
+			}
+
+			.popup__form_button:hover {
+				box-shadow: 0 0 10px #000;
 			}
 
 	.popup__succes {
-		border: 1px solid #000;
+		/* border: 1px solid #000; */
+		box-shadow: 0 0 10px #000;
 		border-radius: 20px;
 		background: -o-linear-gradient(55deg, #ff8f5a 30%, #ff2f96 70%);
 		background: linear-gradient(35deg, #ff8f5a 30%, #ff2f96 70%);
@@ -400,9 +420,9 @@ a {
 	 .hover-color a::before {
 		 content: '';
 		 position: absolute;
-		 bottom: -1px;
+		 bottom: -2px;
 		 width: 100%;
-		 height: 1px;
+		 height: 2px;
 		 background: #fc557c;
 		 -webkit-transition: .5s;
 		 -o-transition: .5s;
@@ -474,6 +494,7 @@ a {
 	 .about-me__attribut {
 		 position: absolute;
 		 color: #ff2f96;
+		 text-shadow: 0 0 2px #fff;
 		 font-weight: 500;
 		 -webkit-transition: all 1s ease-in-out 0.5s;
 		 -o-transition: all 1s ease-in-out 0.5s;
@@ -483,13 +504,13 @@ a {
 		 z-index: -1;
 	 }
 		 .about-me__attribut1 {
-			 font-size: 48.77px;
+			 font-size: 49px;
 			 -webkit-transform: rotate(30deg) translateX(-468px) translateY(-120px);
 				  -ms-transform: rotate(30deg) translateX(-468px) translateY(-120px);
 						transform: rotate(30deg) translateX(-468px) translateY(-120px);
 		 }
 		 .about-me__attribut2 {
-			 font-size: 29.88px;
+			 font-size: 30px;
 			 word-spacing: -8px;
 			 -webkit-transform: rotate(-14deg) translateX(378px) translateY(-222px);
 				  -ms-transform: rotate(-14deg) translateX(378px) translateY(-222px);
@@ -499,20 +520,20 @@ a {
 			 -webkit-transform: rotate(15deg) translateX(-251px) translateY(-47px);
 				  -ms-transform: rotate(15deg) translateX(-251px) translateY(-47px);
 						transform: rotate(15deg) translateX(-251px) translateY(-47px);
-			 font-size: 57.11px;
+			 font-size: 57px;
 		 }
 		 .about-me__attribut4 {
 			 -webkit-transform: rotate(21deg) translateX(469px) translateY(-108px);
 				  -ms-transform: rotate(21deg) translateX(469px) translateY(-108px);
 						transform: rotate(21deg) translateX(469px) translateY(-108px);
-			 font-size: 37.57px;
+			 font-size: 38px;
 			 word-spacing: -10px;
 		 }
 		 .about-me__attribut5 {
 			 -webkit-transform: rotate(-22deg) translateX(-164px) translateY(145px);
 				  -ms-transform: rotate(-22deg) translateX(-164px) translateY(145px);
 						transform: rotate(-22deg) translateX(-164px) translateY(145px);
-			 font-size: 40.77px;
+			 font-size: 41px;
 			 word-spacing: -11px;
 		 }
  
@@ -575,7 +596,7 @@ a {
 	position: absolute;
 	right: -9px;
 	bottom: 0;
-	z-index: 0;
+	z-index: -2;
  }
  
  /* Центральный блок */
@@ -680,6 +701,7 @@ a {
 	 outline: none;
 	 -webkit-box-shadow: 0 0 10px;
 				box-shadow: 0 0 10px;
+	transition: .4s;
  }
  
  .swiper-button-next {
@@ -695,10 +717,15 @@ a {
 	 outline: none;
 	 -webkit-box-shadow: 0 0 10px;
 				box-shadow: 0 0 10px;
+	transition: .4s;
  }
  
  .swiper-button-prev::after, .swiper-button-next::after {
 	 display: none;
+ }
+
+ .swiper-button-prev:hover, .swiper-button-next:hover {
+	box-shadow: 0 0 10px 3px #ff4e2e;
  }
  
  .swiper-pagination {
@@ -907,7 +934,17 @@ a {
 	 height: 28px;
 	 width: 35px;
 	 background: url(../img/social_sprite.png) no-repeat;
+	 transition: transform .4s;
+	 transition-property: border-bottom;
  }
+
+ 	.vk::after {
+		content: "";
+		border-bottom: 1px solid red;
+		position: relative;
+		top: 5px;
+		width: 100%;
+	 }
  
  .fb {
 	 display: block;
